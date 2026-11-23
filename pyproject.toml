@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "contractmap"
+version = "1.0.0"
+description = "EVM attack-surface mapper: architecture, dependency and access-control discovery for Solidity systems."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "SwarmSec", email = "security@swarmsec.app" }]
+keywords = ["ethereum", "evm", "solidity", "security", "smart-contracts", "proxy", "graph"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+]
+dependencies = [
+  "typer>=0.15.1",
+  "rich>=13.9.4",
+  "pydantic>=2.9.2",
+  "httpx>=0.28.1",
+  "pycryptodome>=3.21.0",
+]
+
+[project.optional-dependencies]
+svg = ["graphviz>=0.20.3"]
+dev = [
+  "pytest>=8.3.4",
+  "pytest-asyncio>=0.25.0",
+  "respx>=0.22.0",
+  "ruff>=0.8.4",
+  "mypy>=1.14.0",
+]
+
+[project.scripts]
+contractmap = "contractmap.cli:main"
+
+[project.urls]
+Homepage = "https://swarmsec.app"
+Repository = "https://github.com/swarmsec/contractmap"
+Documentation = "https://github.com/swarmsec/contractmap#readme"
+Issues = "https://github.com/swarmsec/contractmap/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/contractmap"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF"]
+ignore = ["SIM108", "B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["contractmap"]
+
+[tool.mypy]
+python_version = "3.12"
+# `src` when invoked as `mypy src`; CI also passes `scripts`, which shares the same
+# strictness without being part of the shipped package.
+files = ["src/contractmap"]
+warn_unused_ignores = true
+warn_redundant_casts = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = ["error::DeprecationWarning:contractmap.*"]
+markers = ["live: requires a live RPC endpoint (skipped by default)"]
