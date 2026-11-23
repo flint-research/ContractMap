@@ -1,0 +1,33 @@
+┌─ contractmap ──────────────────────────────────────────┐
+│ tests\fixtures\foundry                                 │
+│ foundry · solc 0.8.24+commit.e11b9ed9                  │
+│ 6 contracts · 19 functions · 4 observations · 33 edges │
+└────────────────────────────────────────────────────────┘
+contract    kind       address  proxy  entries  privileged
+IOracle     interface  -        -            1           0
+Ownable     abstract   -        -            2           1
+Roles       contract   -        -            3           3
+Upgradable  contract   -        -            3           2
+Fees        library    -        -            0           0
+Vault       contract   -        -            8           3
+Privileged entry points                                           
+ function                               access             roles  
+ Roles.grantRole(bytes32,address)       likely restricted  role   
+ Roles.mint(address,uint256)            likely restricted  minter 
+ Roles.pause()                          likely restricted  pauser 
+ Upgradable.upgradeTo(address)          restricted         owner  
+ Upgradable.transferOwnership(address)  restricted         owner  
+ Vault.setFee(uint256)                  restricted         owner  
+ Vault.pause()                          restricted         owner  
+ Vault.transferOwnership(address)       restricted         owner  
+Observations                                                                        
+ contract    finding                                                     resolution 
+ Upgradable  Entry point with no guard reaches selfdestruct              inferred   
+             destroy()                                                              
+ Vault       Administrative-looking entry points with no resolved guard  inferred   
+             withdraw(uint256)                                                      
+ Vault       1 entry point(s) perform external calls                     inferred   
+             withdraw(uint256)                                                      
+ Vault       2 payable entry point(s)                                    confirmed  
+             receive(), deposit()                                                   
+graph: 17 function, 5 contract, 5 role, 1 external_target, 1 library

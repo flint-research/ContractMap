@@ -1,0 +1,2060 @@
+{
+  "chain": {
+    "block_hash": null,
+    "block_number": null,
+    "chain_id": null,
+    "name": null
+  },
+  "contracts": [
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [],
+      "events": [],
+      "id": "contract:src:src/Ownable.sol:IOracle",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "interface",
+      "libraries": [],
+      "name": "IOracle",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Ownable.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    },
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [
+        {
+          "name": "NotOwner",
+          "selector": "0x245aecd3",
+          "signature": "NotOwner(address)",
+          "source": null
+        }
+      ],
+      "events": [],
+      "id": "contract:src:src/Ownable.sol:Ownable",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "abstract",
+      "libraries": [],
+      "name": "Ownable",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Ownable.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [
+        {
+          "constant": false,
+          "id": "contract:src:src/Ownable.sol:Ownable:var:owner",
+          "immutable": false,
+          "name": "owner",
+          "offset": null,
+          "slot": null,
+          "source": "src/Ownable.sol:173:20",
+          "type": "address",
+          "visibility": "public"
+        }
+      ],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    },
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [],
+      "events": [],
+      "id": "contract:src:src/Roles.sol:Roles",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "contract",
+      "libraries": [],
+      "name": "Roles",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Roles.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [
+        {
+          "constant": true,
+          "id": "contract:src:src/Roles.sol:Roles:var:MINTER_ROLE",
+          "immutable": false,
+          "name": "MINTER_ROLE",
+          "offset": null,
+          "slot": null,
+          "source": "src/Roles.sol:119:62",
+          "type": "bytes32",
+          "visibility": "public"
+        },
+        {
+          "constant": true,
+          "id": "contract:src:src/Roles.sol:Roles:var:PAUSER_ROLE",
+          "immutable": false,
+          "name": "PAUSER_ROLE",
+          "offset": null,
+          "slot": null,
+          "source": "src/Roles.sol:187:62",
+          "type": "bytes32",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": "contract:src:src/Roles.sol:Roles:var:_roles",
+          "immutable": false,
+          "name": "_roles",
+          "offset": null,
+          "slot": null,
+          "source": "src/Roles.sol:256:59",
+          "type": "mapping(bytes32 => mapping(address => bool))",
+          "visibility": "private"
+        }
+      ],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    },
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [
+        "Ownable"
+      ],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [],
+      "events": [],
+      "id": "contract:src:src/Roles.sol:Upgradable",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "contract",
+      "libraries": [],
+      "name": "Upgradable",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Roles.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [
+        {
+          "constant": false,
+          "id": "contract:src:src/Roles.sol:Upgradable:var:admin",
+          "immutable": false,
+          "name": "admin",
+          "offset": null,
+          "slot": null,
+          "source": "src/Roles.sol:851:20",
+          "type": "address",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": "contract:src:src/Roles.sol:Upgradable:var:implementation",
+          "immutable": false,
+          "name": "implementation",
+          "offset": null,
+          "slot": null,
+          "source": "src/Roles.sol:816:29",
+          "type": "address",
+          "visibility": "public"
+        }
+      ],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    },
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [],
+      "events": [],
+      "id": "contract:src:src/Vault.sol:Fees",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "library",
+      "libraries": [],
+      "name": "Fees",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Vault.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    },
+    {
+      "abi_available": false,
+      "address": null,
+      "base_contracts": [
+        "Ownable"
+      ],
+      "chain_id": null,
+      "code_hash": null,
+      "compiler_version": "0.8.24+commit.e11b9ed9",
+      "errors": [
+        {
+          "name": "InsufficientBalance",
+          "selector": "0xf4d678b8",
+          "signature": "InsufficientBalance()",
+          "source": null
+        },
+        {
+          "name": "Paused",
+          "selector": "0x9e87fac8",
+          "signature": "Paused()",
+          "source": null
+        }
+      ],
+      "events": [
+        {
+          "name": "Deposited",
+          "signature": "Deposited(address,uint256)",
+          "source": null,
+          "topic0": "0x2da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c4"
+        },
+        {
+          "name": "FeeChanged",
+          "signature": "FeeChanged(uint256,uint256)",
+          "source": null,
+          "topic0": "0x5fc463da23c1b063e66f9e352006a7fbe8db7223c455dc429e881a2dfe2f94f1"
+        }
+      ],
+      "id": "contract:src:src/Vault.sol:Vault",
+      "interfaces": [],
+      "is_proxy": false,
+      "kind": "contract",
+      "libraries": [],
+      "name": "Vault",
+      "notes": [],
+      "proxy": null,
+      "source_files": [
+        "src/Vault.sol"
+      ],
+      "source_kind": "compiled_source",
+      "state_variables": [
+        {
+          "constant": false,
+          "id": "contract:src:src/Vault.sol:Vault:var:balances",
+          "immutable": false,
+          "name": "balances",
+          "offset": null,
+          "slot": null,
+          "source": "src/Vault.sol:533:43",
+          "type": "mapping(address => uint256)",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": "contract:src:src/Vault.sol:Vault:var:feeBps",
+          "immutable": false,
+          "name": "feeBps",
+          "offset": null,
+          "slot": null,
+          "source": "src/Vault.sol:482:21",
+          "type": "uint256",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": "contract:src:src/Vault.sol:Vault:var:paused",
+          "immutable": false,
+          "name": "paused",
+          "offset": null,
+          "slot": null,
+          "source": "src/Vault.sol:509:18",
+          "type": "bool",
+          "visibility": "public"
+        }
+      ],
+      "storage_layout": [],
+      "unresolved": false,
+      "verified": false
+    }
+  ],
+  "edges": [
+    {
+      "confidence": 0.3,
+      "evidence": [
+        {
+          "detail": "withdraw(uint256) calls .call; target not resolved statically",
+          "kind": "ast",
+          "source": "src/Vault.sol:890:261",
+          "value": null
+        }
+      ],
+      "id": "calls:node:function:function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332->external:unresolved:959d34c8bddf:.call",
+      "kind": "calls",
+      "label": ".call",
+      "resolution": "unresolved",
+      "source": "node:function:function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332",
+      "target": "external:unresolved:959d34c8bddf"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Ownable.sol:IOracle->node:function:function:contract:src:src/Ownable.sol:IOracle:50d25bcd24f0:latestAnswer()",
+      "kind": "exposes",
+      "label": "latestAnswer()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Ownable.sol:IOracle",
+      "target": "node:function:function:contract:src:src/Ownable.sol:IOracle:50d25bcd24f0"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Ownable.sol:Ownable->node:function:function:contract:src:src/Ownable.sol:Ownable:68efff17f01d:constructor(...)",
+      "kind": "exposes",
+      "label": "constructor(...)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Ownable.sol:Ownable",
+      "target": "node:function:function:contract:src:src/Ownable.sol:Ownable:68efff17f01d"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Ownable.sol:Ownable->node:function:function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923:transferOwnership(address)",
+      "kind": "exposes",
+      "label": "transferOwnership(address)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Ownable.sol:Ownable",
+      "target": "node:function:function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Roles->node:function:function:contract:src:src/Roles.sol:Roles:2f2ff15deca0:grantRole(bytes32,address)",
+      "kind": "exposes",
+      "label": "grantRole(bytes32,address)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Roles",
+      "target": "node:function:function:contract:src:src/Roles.sol:Roles:2f2ff15deca0"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Roles->node:function:function:contract:src:src/Roles.sol:Roles:40c10f19c047:mint(address,uint256)",
+      "kind": "exposes",
+      "label": "mint(address,uint256)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Roles",
+      "target": "node:function:function:contract:src:src/Roles.sol:Roles:40c10f19c047"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Roles->node:function:function:contract:src:src/Roles.sol:Roles:8456cb591a93:pause()",
+      "kind": "exposes",
+      "label": "pause()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Roles",
+      "target": "node:function:function:contract:src:src/Roles.sol:Roles:8456cb591a93"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Upgradable->node:function:function:contract:src:src/Roles.sol:Upgradable:3659cfe67254:upgradeTo(address)",
+      "kind": "exposes",
+      "label": "upgradeTo(address)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "target": "node:function:function:contract:src:src/Roles.sol:Upgradable:3659cfe67254"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Upgradable->node:function:function:contract:src:src/Roles.sol:Upgradable:83197ef0f310:destroy()",
+      "kind": "exposes",
+      "label": "destroy()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "target": "node:function:function:contract:src:src/Roles.sol:Upgradable:83197ef0f310"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Roles.sol:Upgradable->node:function:function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923:transferOwnership(address)",
+      "kind": "exposes",
+      "label": "transferOwnership(address)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "target": "node:function:function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332:withdraw(uint256)",
+      "kind": "exposes",
+      "label": "withdraw(uint256)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:68efff17f01d:constructor(...)",
+      "kind": "exposes",
+      "label": "constructor(...)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:68efff17f01d"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7:setFee(uint256)",
+      "kind": "exposes",
+      "label": "setFee(uint256)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:8456cb591a93:pause()",
+      "kind": "exposes",
+      "label": "pause()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:8456cb591a93"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:9c421eb51c2d:feeOn(uint256)",
+      "kind": "exposes",
+      "label": "feeOn(uint256)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:9c421eb51c2d"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:a3e76c0f73aa:receive()",
+      "kind": "exposes",
+      "label": "receive()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:a3e76c0f73aa"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:d0e30db03f2e:deposit()",
+      "kind": "exposes",
+      "label": "deposit()",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:d0e30db03f2e"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "exposes:node:contract:contract:src:src/Vault.sol:Vault->node:function:function:contract:src:src/Vault.sol:Vault:f2fde38b0923:transferOwnership(address)",
+      "kind": "exposes",
+      "label": "transferOwnership(address)",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:function:function:contract:src:src/Vault.sol:Vault:f2fde38b0923"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "Upgradable inherits Ownable",
+          "kind": "ast",
+          "source": "contract:src:src/Roles.sol:Upgradable",
+          "value": null
+        }
+      ],
+      "id": "inherits:node:contract:contract:src:src/Roles.sol:Upgradable->node:contract:contract:src:src/Ownable.sol:Ownable",
+      "kind": "inherits",
+      "label": null,
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "target": "node:contract:contract:src:src/Ownable.sol:Ownable"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "Vault inherits Ownable",
+          "kind": "ast",
+          "source": "contract:src:src/Vault.sol:Vault",
+          "value": null
+        }
+      ],
+      "id": "inherits:node:contract:contract:src:src/Vault.sol:Vault->node:contract:contract:src:src/Ownable.sol:Ownable",
+      "kind": "inherits",
+      "label": null,
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:contract:contract:src:src/Ownable.sol:Ownable"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Ownable.sol",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:contract:contract:src:src/Ownable.sol:Ownable->node:role:role:contract:src:src/Ownable.sol:Ownable:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Ownable.sol:Ownable",
+      "target": "node:role:role:contract:src:src/Ownable.sol:Ownable:owner"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "role minter",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:contract:contract:src:src/Roles.sol:Roles->node:role:role:contract:src:src/Roles.sol:Roles:minter:minter",
+      "kind": "protected_by",
+      "label": "minter",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Roles",
+      "target": "node:role:role:contract:src:src/Roles.sol:Roles:minter"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "role pauser",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:contract:contract:src:src/Roles.sol:Roles->node:role:role:contract:src:src/Roles.sol:Roles:pauser:pauser",
+      "kind": "protected_by",
+      "label": "pauser",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Roles",
+      "target": "node:role:role:contract:src:src/Roles.sol:Roles:pauser"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:contract:contract:src:src/Roles.sol:Upgradable->node:role:role:contract:src:src/Roles.sol:Upgradable:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "target": "node:role:role:contract:src:src/Roles.sol:Upgradable:owner"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Vault.sol",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:contract:contract:src:src/Vault.sol:Vault->node:role:role:contract:src:src/Vault.sol:Vault:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:contract:contract:src:src/Vault.sol:Vault",
+      "target": "node:role:role:contract:src:src/Vault.sol:Vault:owner"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner",
+          "kind": "ast",
+          "source": "src/Ownable.sol:399:103",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923->node:role:role:contract:src:src/Ownable.sol:Ownable:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923",
+      "target": "node:role:role:contract:src:src/Ownable.sol:Ownable:owner"
+    },
+    {
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "detail": "onlyRole: name indicates authorization but the guard body was not resolved",
+          "kind": "ast",
+          "source": "src/Roles.sol:562:107",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Roles.sol:Roles:40c10f19c047->node:role:role:contract:src:src/Roles.sol:Roles:minter:minter",
+      "kind": "protected_by",
+      "label": "minter",
+      "resolution": "inferred",
+      "source": "node:function:function:contract:src:src/Roles.sol:Roles:40c10f19c047",
+      "target": "node:role:role:contract:src:src/Roles.sol:Roles:minter"
+    },
+    {
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "detail": "onlyRole: name indicates authorization but the guard body was not resolved",
+          "kind": "ast",
+          "source": "src/Roles.sol:675:50",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Roles.sol:Roles:8456cb591a93->node:role:role:contract:src:src/Roles.sol:Roles:pauser:pauser",
+      "kind": "protected_by",
+      "label": "pauser",
+      "resolution": "inferred",
+      "source": "node:function:function:contract:src:src/Roles.sol:Roles:8456cb591a93",
+      "target": "node:role:role:contract:src:src/Roles.sol:Roles:pauser"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+          "kind": "ast",
+          "source": "src/Roles.sol:878:90",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Roles.sol:Upgradable:3659cfe67254->node:role:role:contract:src:src/Roles.sol:Upgradable:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Roles.sol:Upgradable:3659cfe67254",
+      "target": "node:role:role:contract:src:src/Roles.sol:Upgradable:owner"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner",
+          "kind": "ast",
+          "source": "src/Ownable.sol:399:103",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923->node:role:role:contract:src:src/Roles.sol:Upgradable:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923",
+      "target": "node:role:role:contract:src:src/Roles.sol:Upgradable:owner"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+          "kind": "ast",
+          "source": "src/Vault.sol:1157:124",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7->node:role:role:contract:src:src/Vault.sol:Vault:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7",
+      "target": "node:role:role:contract:src:src/Vault.sol:Vault:owner"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+          "kind": "ast",
+          "source": "src/Vault.sol:1287:66",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Vault.sol:Vault:8456cb591a93->node:role:role:contract:src:src/Vault.sol:Vault:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Vault.sol:Vault:8456cb591a93",
+      "target": "node:role:role:contract:src:src/Vault.sol:Vault:owner"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "detail": "onlyOwner: guard body checks msg.sender != owner",
+          "kind": "ast",
+          "source": "src/Ownable.sol:399:103",
+          "value": null
+        }
+      ],
+      "id": "protected_by:node:function:function:contract:src:src/Vault.sol:Vault:f2fde38b0923->node:role:role:contract:src:src/Vault.sol:Vault:owner:owner",
+      "kind": "protected_by",
+      "label": "owner",
+      "resolution": "confirmed",
+      "source": "node:function:function:contract:src:src/Vault.sol:Vault:f2fde38b0923",
+      "target": "node:role:role:contract:src:src/Vault.sol:Vault:owner"
+    }
+  ],
+  "functions": [
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "function body not present in the AST",
+            "kind": "ast",
+            "source": "src/Ownable.sol:82:55",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "unresolved",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Ownable.sol:IOracle",
+      "declared_in": null,
+      "id": "function:contract:src:src/Ownable.sol:IOracle:50d25bcd24f0",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "view",
+      "name": "latestAnswer",
+      "outputs": [
+        "int256"
+      ],
+      "provenance": "compiled_source",
+      "selector": "0x50d25bcd",
+      "signature": "latestAnswer()",
+      "source": "src/Ownable.sol:82:55",
+      "visibility": "external",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Ownable.sol:344:49",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "declared_in": null,
+      "id": "function:contract:src:src/Ownable.sol:Ownable:68efff17f01d",
+      "inputs": [],
+      "is_constructor": true,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "nonpayable",
+      "name": "constructor",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": null,
+      "signature": "constructor(...)",
+      "source": "src/Ownable.sol:344:49",
+      "visibility": "internal",
+      "writes": [
+        "owner"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner",
+            "kind": "ast",
+            "source": "src/Ownable.sol:399:103",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "declared_in": null,
+      "id": "function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923",
+      "inputs": [
+        "address"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "transferOwnership",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "source": "src/Ownable.sol:399:103",
+      "visibility": "public",
+      "writes": [
+        "owner"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyRole: name indicates authorization but the guard body was not resolved",
+            "kind": "ast",
+            "source": "src/Roles.sol:437:119",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyRole"
+        ],
+        "restriction": "inferred",
+        "roles": [
+          "role"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Roles:2f2ff15deca0",
+      "inputs": [
+        "bytes32",
+        "address"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyRole"
+      ],
+      "mutability": "nonpayable",
+      "name": "grantRole",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x2f2ff15d",
+      "signature": "grantRole(bytes32,address)",
+      "source": "src/Roles.sol:437:119",
+      "visibility": "external",
+      "writes": [
+        "_roles"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyRole: name indicates authorization but the guard body was not resolved",
+            "kind": "ast",
+            "source": "src/Roles.sol:562:107",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyRole"
+        ],
+        "restriction": "inferred",
+        "roles": [
+          "minter"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Roles:40c10f19c047",
+      "inputs": [
+        "address",
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyRole"
+      ],
+      "mutability": "nonpayable",
+      "name": "mint",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x40c10f19",
+      "signature": "mint(address,uint256)",
+      "source": "src/Roles.sol:562:107",
+      "visibility": "external",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Roles.sol:731:44",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Roles:4e6ec2477b21",
+      "inputs": [
+        "address",
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "nonpayable",
+      "name": "_mint",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x4e6ec247",
+      "signature": "_mint(address,uint256)",
+      "source": "src/Roles.sol:731:44",
+      "visibility": "internal",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyRole: name indicates authorization but the guard body was not resolved",
+            "kind": "ast",
+            "source": "src/Roles.sol:675:50",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyRole"
+        ],
+        "restriction": "inferred",
+        "roles": [
+          "pauser"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Roles:8456cb591a93",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyRole"
+      ],
+      "mutability": "nonpayable",
+      "name": "pause",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x8456cb59",
+      "signature": "pause()",
+      "source": "src/Roles.sol:675:50",
+      "visibility": "external",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+            "kind": "ast",
+            "source": "src/Roles.sol:878:90",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Upgradable:3659cfe67254",
+      "inputs": [
+        "address"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "upgradeTo",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x3659cfe6",
+      "signature": "upgradeTo(address)",
+      "source": "src/Roles.sol:878:90",
+      "visibility": "external",
+      "writes": [
+        "implementation"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Roles.sol:974:73",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "declared_in": null,
+      "id": "function:contract:src:src/Roles.sol:Upgradable:83197ef0f310",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "nonpayable",
+      "name": "destroy",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x83197ef0",
+      "signature": "destroy()",
+      "source": "src/Roles.sol:974:73",
+      "visibility": "external",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner",
+            "kind": "ast",
+            "source": "src/Ownable.sol:399:103",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "declared_in": "Ownable",
+      "id": "function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923",
+      "inputs": [
+        "address"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "transferOwnership",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "source": "src/Ownable.sol:399:103",
+      "visibility": "public",
+      "writes": [
+        "owner"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:117:126",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Fees",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Fees:4394bd82d6c5",
+      "inputs": [
+        "uint256",
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "pure",
+      "name": "applyFee",
+      "outputs": [
+        "uint256"
+      ],
+      "provenance": "compiled_source",
+      "selector": "0x4394bd82",
+      "signature": "applyFee(uint256,uint256)",
+      "source": "src/Vault.sol:117:126",
+      "visibility": "internal",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:890:261",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": true,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332",
+      "inputs": [
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "nonpayable",
+      "name": "withdraw",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x2e1a7d4d",
+      "signature": "withdraw(uint256)",
+      "source": "src/Vault.sol:890:261",
+      "visibility": "external",
+      "writes": [
+        "balances"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:583:68",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:68efff17f01d",
+      "inputs": [
+        "uint256"
+      ],
+      "is_constructor": true,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "nonpayable",
+      "name": "constructor",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": null,
+      "signature": "constructor(...)",
+      "source": "src/Vault.sol:583:68",
+      "visibility": "public",
+      "writes": [
+        "feeBps"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+            "kind": "ast",
+            "source": "src/Vault.sol:1157:124",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7",
+      "inputs": [
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "setFee",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x69fe0e2d",
+      "signature": "setFee(uint256)",
+      "source": "src/Vault.sol:1157:124",
+      "visibility": "external",
+      "writes": [
+        "feeBps"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner; modifier name suggests authorization",
+            "kind": "ast",
+            "source": "src/Vault.sol:1287:66",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:8456cb591a93",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "pause",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0x8456cb59",
+      "signature": "pause()",
+      "source": "src/Vault.sol:1287:66",
+      "visibility": "external",
+      "writes": [
+        "paused"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:1359:110",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:9c421eb51c2d",
+      "inputs": [
+        "uint256"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "view",
+      "name": "feeOn",
+      "outputs": [
+        "uint256"
+      ],
+      "provenance": "compiled_source",
+      "selector": "0x9c421eb5",
+      "signature": "feeOn(uint256)",
+      "source": "src/Vault.sol:1359:110",
+      "visibility": "external",
+      "writes": []
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:657:53",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:a3e76c0f73aa",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": true,
+      "modifiers": [],
+      "mutability": "payable",
+      "name": "receive",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": null,
+      "signature": "receive()",
+      "source": "src/Vault.sol:657:53",
+      "visibility": "external",
+      "writes": [
+        "balances"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "no guard found in modifiers or body",
+            "kind": "ast",
+            "source": "src/Vault.sol:716:168",
+            "value": null
+          }
+        ],
+        "modifiers": [],
+        "restriction": "none_identified",
+        "roles": []
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": null,
+      "id": "function:contract:src:src/Vault.sol:Vault:d0e30db03f2e",
+      "inputs": [],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [],
+      "mutability": "payable",
+      "name": "deposit",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0xd0e30db0",
+      "signature": "deposit()",
+      "source": "src/Vault.sol:716:168",
+      "visibility": "public",
+      "writes": [
+        "balances"
+      ]
+    },
+    {
+      "access": {
+        "evidence": [
+          {
+            "detail": "onlyOwner: guard body checks msg.sender != owner",
+            "kind": "ast",
+            "source": "src/Ownable.sol:399:103",
+            "value": null
+          }
+        ],
+        "modifiers": [
+          "onlyOwner"
+        ],
+        "restriction": "confirmed",
+        "roles": [
+          "owner"
+        ]
+      },
+      "calls_external": false,
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "declared_in": "Ownable",
+      "id": "function:contract:src:src/Vault.sol:Vault:f2fde38b0923",
+      "inputs": [
+        "address"
+      ],
+      "is_constructor": false,
+      "is_fallback": false,
+      "is_receive": false,
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "mutability": "nonpayable",
+      "name": "transferOwnership",
+      "outputs": [],
+      "provenance": "compiled_source",
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "source": "src/Ownable.sol:399:103",
+      "visibility": "public",
+      "writes": [
+        "owner"
+      ]
+    }
+  ],
+  "metadata": {
+    "analysis_complete": true,
+    "build_system": "foundry",
+    "compiler": "0.8.24+commit.e11b9ed9",
+    "digest": "sha256:a39c6f3d0616702552057da97ed83d136682f6cd877611e8c6aa68e32334b3f3",
+    "duration_ms": 15,
+    "generated_at": "2026-11-22T15:50:48+00:00",
+    "limits": {
+      "depth": 2,
+      "max_nodes": 400,
+      "max_requests": 300
+    },
+    "schema_version": "1.1",
+    "source_provenance": [],
+    "tool_version": "1.0.0"
+  },
+  "nodes": [
+    {
+      "address": null,
+      "attributes": {
+        "resolution": "unresolved"
+      },
+      "contract_id": null,
+      "detail": "unresolved call target",
+      "id": "external:unresolved:959d34c8bddf",
+      "kind": "external_target",
+      "label": ".call"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:IOracle",
+      "detail": null,
+      "id": "node:contract:contract:src:src/Ownable.sol:IOracle",
+      "kind": "contract",
+      "label": "IOracle"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "detail": null,
+      "id": "node:contract:contract:src:src/Ownable.sol:Ownable",
+      "kind": "contract",
+      "label": "Ownable"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": null,
+      "id": "node:contract:contract:src:src/Roles.sol:Roles",
+      "kind": "contract",
+      "label": "Roles"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "detail": null,
+      "id": "node:contract:contract:src:src/Roles.sol:Upgradable",
+      "kind": "contract",
+      "label": "Upgradable"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": null,
+      "id": "node:contract:contract:src:src/Vault.sol:Vault",
+      "kind": "contract",
+      "label": "Vault"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "unresolved",
+        "selector": "0x50d25bcd",
+        "visibility": "external"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:IOracle",
+      "detail": "view",
+      "id": "node:function:function:contract:src:src/Ownable.sol:IOracle:50d25bcd24f0",
+      "kind": "function",
+      "label": "latestAnswer()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "",
+        "visibility": "internal",
+        "writes": "owner"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Ownable.sol:Ownable:68efff17f01d",
+      "kind": "function",
+      "label": "constructor(...)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "roles": "owner",
+        "selector": "0xf2fde38b",
+        "visibility": "public",
+        "writes": "owner"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Ownable.sol:Ownable:f2fde38b0923",
+      "kind": "function",
+      "label": "transferOwnership(address)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "inferred",
+        "roles": "role",
+        "selector": "0x2f2ff15d",
+        "visibility": "external",
+        "writes": "_roles"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Roles:2f2ff15deca0",
+      "kind": "function",
+      "label": "grantRole(bytes32,address)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "inferred",
+        "roles": "minter",
+        "selector": "0x40c10f19",
+        "visibility": "external"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Roles:40c10f19c047",
+      "kind": "function",
+      "label": "mint(address,uint256)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "inferred",
+        "roles": "pauser",
+        "selector": "0x8456cb59",
+        "visibility": "external"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Roles:8456cb591a93",
+      "kind": "function",
+      "label": "pause()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "roles": "owner",
+        "selector": "0x3659cfe6",
+        "visibility": "external",
+        "writes": "implementation"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Upgradable:3659cfe67254",
+      "kind": "function",
+      "label": "upgradeTo(address)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "0x83197ef0",
+        "visibility": "external"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Upgradable:83197ef0f310",
+      "kind": "function",
+      "label": "destroy()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "declared_in": "Ownable",
+        "roles": "owner",
+        "selector": "0xf2fde38b",
+        "visibility": "public",
+        "writes": "owner"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Roles.sol:Upgradable:f2fde38b0923",
+      "kind": "function",
+      "label": "transferOwnership(address)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "0x2e1a7d4d",
+        "visibility": "external",
+        "writes": "balances"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:2e1a7d4d1332",
+      "kind": "function",
+      "label": "withdraw(uint256)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "",
+        "visibility": "public",
+        "writes": "feeBps"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:68efff17f01d",
+      "kind": "function",
+      "label": "constructor(...)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "roles": "owner",
+        "selector": "0x69fe0e2d",
+        "visibility": "external",
+        "writes": "feeBps"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:69fe0e2dc5e7",
+      "kind": "function",
+      "label": "setFee(uint256)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "roles": "owner",
+        "selector": "0x8456cb59",
+        "visibility": "external",
+        "writes": "paused"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:8456cb591a93",
+      "kind": "function",
+      "label": "pause()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "0x9c421eb5",
+        "visibility": "external"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "view",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:9c421eb51c2d",
+      "kind": "function",
+      "label": "feeOn(uint256)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "",
+        "visibility": "external",
+        "writes": "balances"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "payable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:a3e76c0f73aa",
+      "kind": "function",
+      "label": "receive()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "none_identified",
+        "selector": "0xd0e30db0",
+        "visibility": "public",
+        "writes": "balances"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "payable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:d0e30db03f2e",
+      "kind": "function",
+      "label": "deposit()"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "access": "confirmed",
+        "declared_in": "Ownable",
+        "roles": "owner",
+        "selector": "0xf2fde38b",
+        "visibility": "public",
+        "writes": "owner"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "nonpayable",
+      "id": "node:function:function:contract:src:src/Vault.sol:Vault:f2fde38b0923",
+      "kind": "function",
+      "label": "transferOwnership(address)"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "compiler": "0.8.24+commit.e11b9ed9",
+        "source": "compiled_source"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Fees",
+      "detail": null,
+      "id": "node:library:contract:src:src/Vault.sol:Fees",
+      "kind": "library",
+      "label": "Fees"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "kind": "ownable"
+      },
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "detail": "ownable",
+      "id": "node:role:role:contract:src:src/Ownable.sol:Ownable:owner",
+      "kind": "role",
+      "label": "owner"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "kind": "access_control"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": "access_control",
+      "id": "node:role:role:contract:src:src/Roles.sol:Roles:minter",
+      "kind": "role",
+      "label": "minter"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "kind": "access_control"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "detail": "access_control",
+      "id": "node:role:role:contract:src:src/Roles.sol:Roles:pauser",
+      "kind": "role",
+      "label": "pauser"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "kind": "ownable"
+      },
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "detail": "ownable",
+      "id": "node:role:role:contract:src:src/Roles.sol:Upgradable:owner",
+      "kind": "role",
+      "label": "owner"
+    },
+    {
+      "address": null,
+      "attributes": {
+        "kind": "ownable"
+      },
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "detail": "ownable",
+      "id": "node:role:role:contract:src:src/Vault.sol:Vault:owner",
+      "kind": "role",
+      "label": "owner"
+    }
+  ],
+  "observations": [
+    {
+      "category": "external_call",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "detail": "withdraw(uint256)",
+          "kind": "function",
+          "source": "src/Vault.sol:890:261",
+          "value": null
+        }
+      ],
+      "explanation": "Control leaves the contract in these paths, so reentrancy and return-value handling apply. Whether either is exploitable depends on state ordering and on how far the target is trusted.",
+      "id": "obs:external_calls:87a4ad0c144c4ed4",
+      "resolution": "inferred",
+      "review_area": "state changes relative to external calls",
+      "subject": "contract:src:src/Vault.sol:Vault",
+      "title": "1 entry point(s) perform external calls"
+    },
+    {
+      "category": "payable_entry_point",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "detail": "receive()",
+          "kind": "function",
+          "source": "src/Vault.sol:657:53",
+          "value": null
+        },
+        {
+          "detail": "deposit()",
+          "kind": "function",
+          "source": "src/Vault.sol:716:168",
+          "value": null
+        }
+      ],
+      "explanation": "These functions accept value. Check that accounting, refunds and native-asset balances cannot be desynchronised, and that the fallback cannot lock funds.",
+      "id": "obs:payable_entry:87a4ad0c144c4ed4",
+      "resolution": "confirmed",
+      "review_area": "value accounting and refund paths",
+      "subject": "contract:src:src/Vault.sol:Vault",
+      "title": "2 payable entry point(s)"
+    },
+    {
+      "category": "administrative_function",
+      "confidence": 0.5,
+      "evidence": [
+        {
+          "detail": "withdraw(uint256)",
+          "kind": "function",
+          "source": "src/Vault.sol:890:261",
+          "value": null
+        }
+      ],
+      "explanation": "No modifier or inline check in the AST guards these entry points. That can be intentional (public setters, permissionless claiming) or an omission; the result identifies where to look, not a defect.",
+      "id": "obs:unguarded_admin:87a4ad0c144c4ed4",
+      "resolution": "inferred",
+      "review_area": "confirm these entry points are intended to be unrestricted",
+      "subject": "contract:src:src/Vault.sol:Vault",
+      "title": "Administrative-looking entry points with no resolved guard"
+    },
+    {
+      "category": "unguarded_dangerous_operation",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "detail": "destroy()",
+          "kind": "function",
+          "source": "src/Roles.sol:974:73",
+          "value": null
+        }
+      ],
+      "explanation": "Anyone can call these functions, and their body runs selfdestruct, delegatecall, or a low-level call to an address taken from the arguments. Unless that is intended, any caller can destroy the contract, run code against its storage, or make it call anything with its own balance and approvals.",
+      "id": "obs:unguarded_dangerous:45d744af69c09b56",
+      "resolution": "inferred",
+      "review_area": "who may call selfdestruct and delegatecall paths",
+      "subject": "contract:src:src/Roles.sol:Upgradable",
+      "title": "Entry point with no guard reaches selfdestruct"
+    }
+  ],
+  "roles": [
+    {
+      "contract_id": "contract:src:src/Ownable.sol:Ownable",
+      "description": "role `owner` referenced by Ownable",
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Ownable.sol",
+          "value": null
+        }
+      ],
+      "id": "role:contract:src:src/Ownable.sol:Ownable:owner",
+      "kind": "ownable",
+      "name": "owner"
+    },
+    {
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "description": "role `minter` referenced by Roles",
+      "evidence": [
+        {
+          "detail": "role minter",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "role:contract:src:src/Roles.sol:Roles:minter",
+      "kind": "access_control",
+      "name": "minter"
+    },
+    {
+      "contract_id": "contract:src:src/Roles.sol:Roles",
+      "description": "role `pauser` referenced by Roles",
+      "evidence": [
+        {
+          "detail": "role pauser",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "role:contract:src:src/Roles.sol:Roles:pauser",
+      "kind": "access_control",
+      "name": "pauser"
+    },
+    {
+      "contract_id": "contract:src:src/Roles.sol:Upgradable",
+      "description": "role `owner` referenced by Upgradable",
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Roles.sol",
+          "value": null
+        }
+      ],
+      "id": "role:contract:src:src/Roles.sol:Upgradable:owner",
+      "kind": "ownable",
+      "name": "owner"
+    },
+    {
+      "contract_id": "contract:src:src/Vault.sol:Vault",
+      "description": "role `owner` referenced by Vault",
+      "evidence": [
+        {
+          "detail": "role owner",
+          "kind": "ast",
+          "source": "src/Vault.sol",
+          "value": null
+        }
+      ],
+      "id": "role:contract:src:src/Vault.sol:Vault:owner",
+      "kind": "ownable",
+      "name": "owner"
+    }
+  ],
+  "schema_version": "1.1",
+  "target": {
+    "block_number": null,
+    "build_system": "foundry",
+    "chain_id": null,
+    "code_hash": null,
+    "identifier": "tests\\fixtures\\foundry",
+    "kind": "local",
+    "resolved_paths": []
+  },
+  "tool": "contractmap",
+  "warnings": []
+}
